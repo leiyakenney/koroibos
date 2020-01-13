@@ -9,16 +9,28 @@ class Olympians {
   async getAllOlympians() {
     const olympians = await database('olympians').select('name', 'age', 'team', 'sport').groupBy('name', 'age', 'team', 'sport')
     await Promise.all(olympians.map(async (olympian) => {
-      const selectedOlympian = await database('olympians').whereNotNull('medal').whereNot('medal', 'NULL').where('name', olympian.name).select('name').groupBy('name').count('name')
+      const olympianMedals = await database('olympians').whereNotNull('medal').whereNot('medal', 'NULL').where('name', olympian.name).select('name').groupBy('name').count('name')
 
-      if (selectedOlympian.length == 0) {
+      if (olympianMedals.length == 0) {
          olympian['total_medals_won'] = '0'
       }
-      if (selectedOlympian.length != 0) {
-         olympian['total_medals_won'] = selectedOlympian[0].count
+      if (olympianMedals.length != 0) {
+         olympian['total_medals_won'] = olympianMedals[0].count
       }
     }));
     return olympians
+  }
+
+  async getYoungestOlympian() {
+    const olympian = await database('olympians').select('name', 'age', 'team', 'sport').groupBy('name', 'age', 'team', 'sport').orderBy('age').first()
+    const olympianMedals = await database('olympians').whereNotNull('medal').whereNot('medal', 'NULL').where('name', olympian.name).select('name').groupBy('name').count('name')
+    if (olympianMedals.length == 0) {
+       olympian['total_medals_won'] = '0'
+    }
+    if (olympianMedals.length != 0) {
+       olympian['total_medals_won'] = olympianMedals[0].count
+    }
+    return olympian
   }
 }
 
