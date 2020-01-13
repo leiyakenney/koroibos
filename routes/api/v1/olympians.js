@@ -10,23 +10,33 @@ const olympiansPresenter = new OlympiansPresenter();
 router.get('/', async function (request, response) {
   // if youngest:
   if (request.query.age === 'youngest') {
-      await olympiansPresenter.createYoungestResponse()
-      .then((youngestOlympian) => {
-         response.status(200).json({youngestOlympian});
-       })
-       .catch((error) => {
-         return response.status(500).json({ error });
-       });
+    await olympiansPresenter.createYoungestResponse()
+    .then((youngestOlympian) => {
+       response.status(200).json({youngestOlympian});
+     })
+     .catch((error) => {
+       return response.status(500).json({ error });
+     });
     }
   // if oldest:
+  else if (request.query.age === 'oldest') {
+    await olympiansPresenter.createOldestResponse()
+    .then((oldestOlympian) => {
+       response.status(200).json({oldestOlympian});
+     })
+     .catch((error) => {
+       return response.status(500).json({ error });
+     });
+  }
   // otherwise:
-  await olympiansPresenter.createOlympiansResponse()
-  .then((data) => {
-     response.status(200).json(data);
-   })
-   .catch((error) => {
-     return response.status(500).json({ error });
-   });
+  else
+    await olympiansPresenter.createOlympiansResponse()
+    .then((data) => {
+       response.status(200).json(data);
+     })
+     .catch((error) => {
+       return response.status(500).json({ error });
+     });
 });
 
 module.exports = router;
