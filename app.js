@@ -1,9 +1,9 @@
+require('dotenv').config()
+
 var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-
-require('dotenv').config()
 
 const environment = process.env.NODE_ENV || 'development';
 const configuration = require('./knexfile')[environment];
