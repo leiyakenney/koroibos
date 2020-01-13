@@ -27,7 +27,6 @@ describe('test olympians path for get all request', () => {
     it('happy path', async () => {
       const response = await request(app)
         .get("/api/v1/olympians");
-        console.log(response.body)
 
       expect(response.statusCode).toBe(200);
 
