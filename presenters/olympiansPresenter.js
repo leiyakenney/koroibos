@@ -9,6 +9,12 @@ class OlympiansPresenter {
     formattedData["olympians"] = data
     return formattedData
   }
+
+  async createYoungestResponse() {
+    const data = await olympians.getYoungestOlympian()
+    const formattedData = [ data ]
+    return formattedData
+  }
 }
 
 module.exports = OlympiansPresenter
