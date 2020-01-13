@@ -15,7 +15,7 @@ Koroibos is an Express NodeJS RESTful API that returns detailed information abou
   ```
   psql
   \c olympians_dev
-  COPY olympians(name, sex, age, height, weight, team, games, sport, event, medal) FROM 'complete_file_path_of_csv_file' delimiter ',' csv NULL AS 'NULL';
+  COPY olympians(name, sex, age, height, weight, team, games, sport, event, medal) FROM 'csv_file_full_path' delimiter ',' csv NULL AS 'NULL';
   ```
 1. Run table migrations with `knex migrate:latest`
 1. Seed the database with `knex seed:run`
