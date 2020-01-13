@@ -32,6 +32,18 @@ class Olympians {
     }
     return olympian
   }
+
+  async getOldestOlympian() {
+    const olympian = await database('olympians').select('name', 'age', 'team', 'sport').groupBy('name', 'age', 'team', 'sport').orderBy('age', 'desc').first()
+    const oldMedals = await database('olympians').whereNotNull('medal').whereNot('medal', 'NULL').where('name', olympian.name).select('name').groupBy('name').count('name')
+    if (oldMedals.length == 0) {
+       olympian['total_medals_won'] = '0'
+    }
+    if (oldMedals.length != 0) {
+       olympian['total_medals_won'] = oldMedals[0].count
+    }
+    return olympian
+  }
 }
 
 module.exports = Olympians
