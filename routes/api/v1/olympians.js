@@ -8,7 +8,19 @@ const OlympiansPresenter = require('../../../presenters/olympiansPresenter.js');
 const olympiansPresenter = new OlympiansPresenter();
 
 router.get('/', async function (request, response) {
- await olympiansPresenter.createOlympiansResponse()
+  // if youngest:
+  if (request.query.age === 'youngest') {
+      await olympiansPresenter.createYoungestResponse()
+      .then((youngestOlympian) => {
+         response.status(200).json({youngestOlympian});
+       })
+       .catch((error) => {
+         return response.status(500).json({ error });
+       });
+    }
+  // if oldest:
+  // otherwise:
+  await olympiansPresenter.createOlympiansResponse()
   .then((data) => {
      response.status(200).json(data);
    })
