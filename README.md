@@ -27,7 +27,7 @@ Koroibos is an Express NodeJS RESTful API that returns detailed information abou
 - This app and its production endpoints can be accessed at https://koroibos-lk.herokuapp.com/
 
 ## Endpoints
-- To access locally: `npm start`, navigate to `http://localhost:5000/`
+- To access locally: `npm start`, navigate to `http://localhost:3000/`
 
 ### Endpoint 1: Get All Olympians
 Returns all Olympians from the database, including their: id, name, team, age, sport, and total medals won.
