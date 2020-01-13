@@ -45,14 +45,25 @@ describe('test olympians path for get all request', () => {
         .get("/api/v1/olympians?age=youngest");
 
       expect(response.statusCode).toBe(200);
-      console.log(response.body.youngestOlympian)
       expect(response.body.youngestOlympian.length).toBe(1)
       expect(response.body.youngestOlympian[0].name).toBe("Saturday Keigo Erimuya")
       expect(response.body.youngestOlympian[0].age).toBe("18")
       expect(response.body.youngestOlympian[0].team).toBe("Nigeria")
       expect(response.body.youngestOlympian[0].sport).toBe("Football")
       expect(response.body.youngestOlympian[0].total_medals_won).toBe("1")
+    })
 
+    it("can get the oldest Olympian with an 'oldest' query", async () => {
+      const response = await request(app)
+        .get("/api/v1/olympians?age=oldest");
+
+      expect(response.statusCode).toBe(200);
+      expect(response.body.oldestOlympian.length).toBe(1)
+      expect(response.body.oldestOlympian[0].name).toBe("Mara del Rosario Espinoza Espinoza")
+      expect(response.body.oldestOlympian[0].age).toBe("28")
+      expect(response.body.oldestOlympian[0].team).toBe("Mexico")
+      expect(response.body.oldestOlympian[0].sport).toBe("Taekwondo")
+      expect(response.body.oldestOlympian[0].total_medals_won).toBe("1")
     })
   });
 });
