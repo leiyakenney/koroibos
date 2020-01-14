@@ -46,7 +46,6 @@ class OlympianStats {
     var avgFemaleWeight = parseFloat((femalesWeight / totalFemaleOlympians).toFixed(1))
     formattedData["average_weight:"]["female_olympians"] = avgFemaleWeight
 
-    console.log(formattedData)
     return formattedData
   }
 }

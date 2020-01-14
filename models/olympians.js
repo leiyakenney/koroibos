@@ -24,6 +24,7 @@ class Olympians {
   async getYoungestOlympian() {
     const olympian = await database('olympians').select('name', 'age', 'team', 'sport').groupBy('name', 'age', 'team', 'sport').orderBy('age').first()
     const olympianMedals = await database('olympians').whereNotNull('medal').whereNot('medal', 'NULL').where('name', olympian.name).select('name').groupBy('name').count('name')
+
     if (olympianMedals.length == 0) {
        olympian['total_medals_won'] = '0'
     }
@@ -36,6 +37,7 @@ class Olympians {
   async getOldestOlympian() {
     const olympian = await database('olympians').select('name', 'age', 'team', 'sport').groupBy('name', 'age', 'team', 'sport').orderBy('age', 'desc').first()
     const oldMedals = await database('olympians').whereNotNull('medal').whereNot('medal', 'NULL').where('name', olympian.name).select('name').groupBy('name').count('name')
+
     if (oldMedals.length == 0) {
        olympian['total_medals_won'] = '0'
     }
