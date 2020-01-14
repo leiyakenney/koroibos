@@ -21,10 +21,10 @@ describe('test olympians path for get all request', () => {
     ]);
 
     await database('events').insert([
-      {sport: "Rowing", event: "Rowing Women's Lightweight Double Sculls"},
-      {sport: "Rowing", event: "Rowing Women's Coxless Pairs"},
-      {sport: "Rowing", event: "Rowing Men's Double Sculls"},
-      {sport: "Taekwondo", event: "Taekwondo Women's Heavyweight"}
+      {id: 4, sport: "Rowing", event: "Rowing Women's Lightweight Double Sculls"},
+      {id: 3, sport: "Rowing", event: "Rowing Women's Coxless Pairs"},
+      {id: 2, sport: "Rowing", event: "Rowing Men's Double Sculls"},
+      {id: 1, sport: "Taekwondo", event: "Taekwondo Women's Heavyweight"}
     ]);
   });
 
@@ -48,7 +48,7 @@ describe('test olympians path for get all request', () => {
 
     it('can get a list of medalists for a specific event', async () => {
       const response = await request(app)
-      .get("/api/v1/events/1/medalists")
+      .get(`/api/v1/events/1/medalists`)
 
       expect(response.statusCode).toBe(200);
       console.log(response.body)
