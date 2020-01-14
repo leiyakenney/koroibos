@@ -1,7 +1,7 @@
 const Olympians = require('../models/olympians.js');
 const olympians = new Olympians();
 
-class OlympiansPresenter {
+class OlympiansHelper {
 
   async createOlympiansResponse() {
     const data = await olympians.getAllOlympians()
@@ -23,4 +23,4 @@ class OlympiansPresenter {
   }
 }
 
-module.exports = OlympiansPresenter
+module.exports = OlympiansHelper

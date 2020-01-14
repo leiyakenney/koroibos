@@ -4,13 +4,13 @@ const environment = process.env.NODE_ENV || 'development';
 const configuration = require('../../../knexfile')[environment];
 const database = require('knex')(configuration);
 
-const OlympiansPresenter = require('../../../presenters/olympiansPresenter.js');
-const olympiansPresenter = new OlympiansPresenter();
+const OlympiansHelper = require('../../../helpers/olympiansHelper.js');
+const olympiansHelper = new OlympiansHelper();
 
 router.get('/', async function (request, response) {
   // if youngest:
   if (request.query.age === 'youngest') {
-    await olympiansPresenter.createYoungestResponse()
+    await olympiansHelper.createYoungestResponse()
     .then((youngestOlympian) => {
        response.status(200).json({youngestOlympian});
      })
@@ -20,7 +20,7 @@ router.get('/', async function (request, response) {
     }
   // if oldest:
   else if (request.query.age === 'oldest') {
-    await olympiansPresenter.createOldestResponse()
+    await olympiansHelper.createOldestResponse()
     .then((oldestOlympian) => {
        response.status(200).json({oldestOlympian});
      })
@@ -30,7 +30,7 @@ router.get('/', async function (request, response) {
   }
   // otherwise:
   else
-    await olympiansPresenter.createOlympiansResponse()
+    await olympiansHelper.createOlympiansResponse()
     .then((data) => {
        response.status(200).json(data);
      })
