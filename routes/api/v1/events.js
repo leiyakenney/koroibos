@@ -15,6 +15,16 @@ router.get('/', async function (request, response) {
   .catch((error) => {
     return response.status(500).json({ error });
   })
-})
+});
+
+router.get("/:id/medalists", async function (request, response) {
+  await eventsHelper.createMedalistsResponse(request.params.id)
+  .then((data) => {
+    response.status(200).json(data);
+  })
+  .catch((error) => {
+    return response.status(500).json({ error })
+  });
+});
 
 module.exports = router;
