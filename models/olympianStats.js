@@ -14,6 +14,17 @@ class OlympianStats {
     formattedData["average_weight:"] = {}
     formattedData["average_weight:"]["unit"] = "kg"
 
+    var malesWeight = 0
+    const maleOlympians = await database('olympians').where('sex', 'M').whereNotNull('weight').select('name', 'age', 'team', 'weight', 'height').groupBy('name', 'age', 'team', 'weight', 'height')
+    await Promise.all(maleOlympians.map(async (olympian) => {
+      const maleKg = parseInt(olympian.weight)
+      malesWeight += maleKg
+    }));
+
+    var totalMaleOlympians = maleOlympians.length
+    var avgMaleWeight = (malesWeight / totalMaleOlympians)
+    formattedData["average_weight:"]["male_olympians"] = avgMaleWeight
+
     console.log(formattedData)
     return formattedData
   }
