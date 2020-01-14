@@ -7,7 +7,7 @@ class OlympianStats {
   }
 
   async getOlympianStats() {
-    formattedData = {}
+    const formattedData = {}
     const totalOlympians = await database('olympians').select('name', 'age', 'team', 'weight', 'height').groupBy('name', 'age', 'team', 'weight', 'height')
     formattedData["total_competing_olympians"] = totalOlympians.length
   }
