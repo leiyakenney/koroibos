@@ -8,7 +8,13 @@ class EventsHelper {
     const formattedData = {}
     formattedData["events"] = data
     return formattedData
-  }
+  };
+
+  async createMedalistsResponse(id) {
+    const data = await events.getMedalists(id)
+    console.log(data)
+    return data
+  };
 }
 
 module.exports = EventsHelper
