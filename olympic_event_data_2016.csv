@@ -1,0 +1,302 @@
+Archery,Archery Men's Individual
+Archery,Archery Men's Team
+Archery,Archery Women's Individual
+Archery,Archery Women's Team
+Athletics,"Athletics Men's 1,500 metres"
+Athletics,"Athletics Men's 10,000 metres"
+Athletics,Athletics Men's 100 metres
+Athletics,Athletics Men's 110 metres Hurdles
+Athletics,Athletics Men's 20 kilometres Walk
+Athletics,Athletics Men's 200 metres
+Athletics,"Athletics Men's 3,000 metres Steeplechase"
+Athletics,Athletics Men's 4 x 100 metres Relay
+Athletics,Athletics Men's 4 x 400 metres Relay
+Athletics,Athletics Men's 400 metres
+Athletics,Athletics Men's 400 metres Hurdles
+Athletics,"Athletics Men's 5,000 metres"
+Athletics,Athletics Men's 50 kilometres Walk
+Athletics,Athletics Men's 800 metres
+Athletics,Athletics Men's Decathlon
+Athletics,Athletics Men's Discus Throw
+Athletics,Athletics Men's Hammer Throw
+Athletics,Athletics Men's High Jump
+Athletics,Athletics Men's Javelin Throw
+Athletics,Athletics Men's Long Jump
+Athletics,Athletics Men's Marathon
+Athletics,Athletics Men's Pole Vault
+Athletics,Athletics Men's Shot Put
+Athletics,Athletics Men's Triple Jump
+Athletics,"Athletics Women's 1,500 metres"
+Athletics,"Athletics Women's 10,000 metres"
+Athletics,Athletics Women's 100 metres
+Athletics,Athletics Women's 100 metres Hurdles
+Athletics,Athletics Women's 20 kilometres Walk
+Athletics,Athletics Women's 200 metres
+Athletics,"Athletics Women's 3,000 metres Steeplechase"
+Athletics,Athletics Women's 4 x 100 metres Relay
+Athletics,Athletics Women's 4 x 400 metres Relay
+Athletics,Athletics Women's 400 metres
+Athletics,Athletics Women's 400 metres Hurdles
+Athletics,"Athletics Women's 5,000 metres"
+Athletics,Athletics Women's 800 metres
+Athletics,Athletics Women's Discus Throw
+Athletics,Athletics Women's Hammer Throw
+Athletics,Athletics Women's Heptathlon
+Athletics,Athletics Women's High Jump
+Athletics,Athletics Women's Javelin Throw
+Athletics,Athletics Women's Long Jump
+Athletics,Athletics Women's Marathon
+Athletics,Athletics Women's Marathon
+Athletics,Athletics Women's Pole Vault
+Athletics,Athletics Women's Shot Put
+Athletics,Athletics Women's Triple Jump
+Badminton,Badminton Men's Doubles
+Badminton,Badminton Men's Singles
+Badminton,Badminton Mixed Doubles
+Badminton,Badminton Women's Doubles
+Badminton,Badminton Women's Singles
+Basketball,Basketball Men's Basketball
+Basketball,Basketball Women's Basketball
+Beach Volleyball,Beach Volleyball Men's Beach Volleyball
+Beach Volleyball,Beach Volleyball Women's Beach Volleyball
+Boxing,Boxing Men's Bantamweight
+Boxing,Boxing Men's Flyweight
+Boxing,Boxing Men's Heavyweight
+Boxing,Boxing Men's Light-Flyweight
+Boxing,Boxing Men's Light-Heavyweight
+Boxing,Boxing Men's Light-Welterweight
+Boxing,Boxing Men's Lightweight
+Boxing,Boxing Men's Middleweight
+Boxing,Boxing Men's Super-Heavyweight
+Boxing,Boxing Men's Welterweight
+Boxing,Boxing Women's Flyweight
+Boxing,Boxing Women's Lightweight
+Boxing,Boxing Women's Middleweight
+Canoeing,"Canoeing Men's Canadian Doubles, 1,000 metres"
+Canoeing,"Canoeing Men's Canadian Doubles, Slalom"
+Canoeing,"Canoeing Men's Canadian Singles, 1,000 metres"
+Canoeing,"Canoeing Men's Canadian Singles, 200 metres"
+Canoeing,"Canoeing Men's Canadian Singles, Slalom"
+Canoeing,"Canoeing Men's Kayak Doubles, 1,000 metres"
+Canoeing,"Canoeing Men's Kayak Doubles, 200 metres"
+Canoeing,"Canoeing Men's Kayak Fours, 1,000 metres"
+Canoeing,"Canoeing Men's Kayak Singles, 1,000 metres"
+Canoeing,"Canoeing Men's Kayak Singles, 200 metres"
+Canoeing,"Canoeing Men's Kayak Singles, Slalom"
+Canoeing,"Canoeing Women's Kayak Doubles, 500 metres"
+Canoeing,"Canoeing Women's Kayak Fours, 500 metres"
+Canoeing,"Canoeing Women's Kayak Singles, 200 metres"
+Canoeing,"Canoeing Women's Kayak Singles, 500 metres"
+Canoeing,"Canoeing Women's Kayak Singles, Slalom"
+Cycling,Cycling Men's BMX
+Cycling,Cycling Men's Individual Time Trial
+Cycling,Cycling Men's Keirin
+Cycling,"Cycling Men's Mountainbike, Cross-Country"
+Cycling,Cycling Men's Sprint
+Cycling,"Cycling Men's Team Pursuit, 4,000 metres"
+Cycling,Cycling Men's Team Sprint
+Cycling,Cycling Women's BMX
+Cycling,Cycling Women's Individual Time Trial
+Cycling,Cycling Women's Keirin
+Cycling,"Cycling Women's Mountainbike, Cross-Country"
+Cycling,Cycling Women's Omnium
+Cycling,"Cycling Women's Road Race, Individual"
+Cycling,Cycling Women's Sprint
+Cycling,Cycling Women's Team Pursuit
+Cycling,Cycling Women's Team Sprint
+Diving,Diving Men's Platform
+Diving,Diving Men's Springboard
+Diving,Diving Men's Synchronized Platform
+Diving,Diving Men's Synchronized Springboard
+Diving,Diving Women's Platform
+Diving,Diving Women's Springboard
+Diving,Diving Women's Synchronized Platform
+Diving,Diving Women's Synchronized Springboard
+Equestrianism,"Equestrianism Mixed Dressage, Individual"
+Equestrianism,"Equestrianism Mixed Dressage, Team"
+Equestrianism,"Equestrianism Mixed Jumping, Individual"
+Equestrianism,"Equestrianism Mixed Jumping, Team"
+Equestrianism,"Equestrianism Mixed Three-Day Event, Individual"
+Equestrianism,"Equestrianism Mixed Three-Day Event, Team"
+Fencing,"Fencing Men's epee, Individual"
+Fencing,"Fencing Men's epee, Team"
+Fencing,"Fencing Men's Foil, Individual"
+Fencing,"Fencing Men's Foil, Team"
+Fencing,"Fencing Men's Sabre, Individual"
+Fencing,"Fencing Women's epee, Individual"
+Fencing,"Fencing Women's epee, Team"
+Fencing,"Fencing Women's Foil, Individual"
+Fencing,"Fencing Women's Sabre, Individual"
+Fencing,"Fencing Women's Sabre, Team"
+Football,Football Men's Football
+Football,Football Women's Football
+Golf,Golf Men's Individual
+Golf,Golf Women's Individual
+Gymnastics,Gymnastics Men's Floor Exercise
+Gymnastics,Gymnastics Men's Horizontal Bar
+Gymnastics,Gymnastics Men's Horse Vault
+Gymnastics,Gymnastics Men's Individual All-Around
+Gymnastics,Gymnastics Men's Parallel Bars
+Gymnastics,Gymnastics Men's Pommelled Horse
+Gymnastics,Gymnastics Men's Rings
+Gymnastics,Gymnastics Men's Team All-Around
+Gymnastics,Gymnastics Women's Balance Beam
+Gymnastics,Gymnastics Women's Floor Exercise
+Gymnastics,Gymnastics Women's Horse Vault
+Gymnastics,Gymnastics Women's Individual All-Around
+Gymnastics,Gymnastics Women's Team All-Around
+Gymnastics,Gymnastics Women's Uneven Bars
+Handball,Handball Men's Handball
+Handball,Handball Women's Handball
+Hockey,Hockey Men's Hockey
+Hockey,Hockey Women's Hockey
+Judo,Judo Men's Extra-Lightweight
+Judo,Judo Men's Half-Heavyweight
+Judo,Judo Men's Half-Lightweight
+Judo,Judo Men's Half-Middleweight
+Judo,Judo Men's Heavyweight
+Judo,Judo Men's Lightweight
+Judo,Judo Men's Middleweight
+Judo,Judo Women's Extra-Lightweight
+Judo,Judo Women's Half-Heavyweight
+Judo,Judo Women's Half-Lightweight
+Judo,Judo Women's Half-Middleweight
+Judo,Judo Women's Heavyweight
+Judo,Judo Women's Lightweight
+Modern Pentathlon,Modern Pentathlon Men's Individual
+Rhythmic Gymnastics,Rhythmic Gymnastics Women's Group
+Rhythmic Gymnastics,Rhythmic Gymnastics Women's Individual
+Rowing,Rowing Men's Coxed Eights
+Rowing,Rowing Men's Coxless Fours
+Rowing,Rowing Men's Coxless Pairs
+Rowing,Rowing Men's Double Sculls
+Rowing,Rowing Men's Lightweight Coxless Fours
+Rowing,Rowing Men's Lightweight Double Sculls
+Rowing,Rowing Men's Quadruple Sculls
+Rowing,Rowing Men's Single Sculls
+Rowing,Rowing Women's Coxed Eights
+Rowing,Rowing Women's Coxless Pairs
+Rowing,Rowing Women's Double Sculls
+Rowing,Rowing Women's Lightweight Double Sculls
+Rowing,Rowing Women's Quadruple Sculls
+Rowing,Rowing Women's Single Sculls
+Rugby Sevens,Rugby Sevens Men's Rugby Sevens
+Rugby Sevens,Rugby Sevens Women's Rugby Sevens
+Sailing,Sailing Men's One Person Dinghy
+Sailing,Sailing Men's One Person Heavyweight Dinghy
+Sailing,Sailing Men's Skiff
+Sailing,Sailing Men's Two Person Dinghy
+Sailing,Sailing Men's Windsurfer
+Sailing,Sailing Men's Windsurfer
+Sailing,Sailing Mixed Multihull
+Sailing,Sailing Women's One Person Dinghy
+Sailing,Sailing Women's Skiff
+Sailing,Sailing Women's Two Person Dinghy
+Sailing,Sailing Women's Windsurfer
+Shooting,"Shooting Men's Air Pistol, 10 metres"
+Shooting,"Shooting Men's Air Rifle, 10 metres"
+Shooting,Shooting Men's Double Trap
+Shooting,"Shooting Men's Free Pistol, 50 metres"
+Shooting,Shooting Men's Skeet
+Shooting,"Shooting Men's Small-Bore Rifle, Prone, 50 metres"
+Shooting,"Shooting Men's Small-Bore Rifle, Three Positions, 50 metres"
+Shooting,Shooting Men's Trap
+Shooting,"Shooting Women's Air Pistol, 10 metres"
+Shooting,"Shooting Women's Air Rifle, 10 metres"
+Shooting,Shooting Women's Skeet
+Shooting,"Shooting Women's Small-Bore Rifle, Three Positions, 50 metres"
+Shooting,"Shooting Women's Sporting Pistol, 25 metres"
+Shooting,Shooting Women's Trap
+Swimming,"Swimming Men's 1,500 metres Freestyle"
+Swimming,Swimming Men's 10 kilometres Open Water
+Swimming,Swimming Men's 100 metres Backstroke
+Swimming,Swimming Men's 100 metres Breaststroke
+Swimming,Swimming Men's 100 metres Butterfly
+Swimming,Swimming Men's 100 metres Freestyle
+Swimming,Swimming Men's 200 metres Backstroke
+Swimming,Swimming Men's 200 metres Breaststroke
+Swimming,Swimming Men's 200 metres Butterfly
+Swimming,Swimming Men's 200 metres Freestyle
+Swimming,Swimming Men's 200 metres Individual Medley
+Swimming,Swimming Men's 4 x 100 metres Freestyle Relay
+Swimming,Swimming Men's 4 x 100 metres Medley Relay
+Swimming,Swimming Men's 4 x 200 metres Freestyle Relay
+Swimming,Swimming Men's 400 metres Freestyle
+Swimming,Swimming Men's 400 metres Individual Medley
+Swimming,Swimming Men's 50 metres Freestyle
+Swimming,Swimming Women's 10 kilometres Open Water
+Swimming,Swimming Women's 100 metres Backstroke
+Swimming,Swimming Women's 100 metres Breaststroke
+Swimming,Swimming Women's 100 metres Butterfly
+Swimming,Swimming Women's 100 metres Freestyle
+Swimming,Swimming Women's 200 metres Backstroke
+Swimming,Swimming Women's 200 metres Breaststroke
+Swimming,Swimming Women's 200 metres Butterfly
+Swimming,Swimming Women's 200 metres Freestyle
+Swimming,Swimming Women's 200 metres Individual Medley
+Swimming,Swimming Women's 4 x 100 metres Freestyle Relay
+Swimming,Swimming Women's 4 x 100 metres Medley Relay
+Swimming,Swimming Women's 4 x 200 metres Freestyle Relay
+Swimming,Swimming Women's 400 metres Freestyle
+Swimming,Swimming Women's 400 metres Individual Medley
+Swimming,Swimming Women's 50 metres Freestyle
+Swimming,Swimming Women's 800 metres Freestyle
+Synchronized Swimming,Synchronized Swimming Women's Duet
+Synchronized Swimming,Synchronized Swimming Women's Team
+Table Tennis,Table Tennis Men's Singles
+Table Tennis,Table Tennis Men's Team
+Table Tennis,Table Tennis Women's Singles
+Table Tennis,Table Tennis Women's Team
+Taekwondo,Taekwondo Men's Featherweight
+Taekwondo,Taekwondo Men's Flyweight
+Taekwondo,Taekwondo Men's Heavyweight
+Taekwondo,Taekwondo Men's Welterweight
+Taekwondo,Taekwondo Women's Featherweight
+Taekwondo,Taekwondo Women's Heavyweight
+Taekwondo,Taekwondo Women's Welterweight
+Tennis,Tennis Men's Doubles
+Tennis,Tennis Men's Singles
+Tennis,Tennis Mixed Doubles
+Tennis,Tennis Women's Doubles
+Tennis,Tennis Women's Singles
+Trampolining,Trampolining Men's Individual
+Trampolining,Trampolining Women's Individual
+Triathlon,Triathlon Men's Olympic Distance
+Triathlon,Triathlon Women's Olympic Distance
+Volleyball,Volleyball Men's Volleyball
+Volleyball,Volleyball Women's Volleyball
+Water Polo,Water Polo Men's Water Polo
+Water Polo,Water Polo Women's Water Polo
+Weightlifting,Weightlifting Men's Bantamweight
+Weightlifting,Weightlifting Men's Featherweight
+Weightlifting,Weightlifting Men's Heavyweight
+Weightlifting,Weightlifting Men's Light-Heavyweight
+Weightlifting,Weightlifting Men's Lightweight
+Weightlifting,Weightlifting Men's Middle-Heavyweight
+Weightlifting,Weightlifting Men's Middleweight
+Weightlifting,Weightlifting Men's Super-Heavyweight
+Weightlifting,Weightlifting Women's Featherweight
+Weightlifting,Weightlifting Women's Flyweight
+Weightlifting,Weightlifting Women's Heavyweight
+Weightlifting,Weightlifting Women's Light-Heavyweight
+Weightlifting,Weightlifting Women's Lightweight
+Weightlifting,Weightlifting Women's Middleweight
+Weightlifting,Weightlifting Women's Super-Heavyweight
+Wrestling,"Wrestling Men's Featherweight, Freestyle"
+Wrestling,"Wrestling Men's Featherweight, Freestyle"
+Wrestling,"Wrestling Men's Featherweight, Greco-Roman"
+Wrestling,"Wrestling Men's Heavyweight, Freestyle"
+Wrestling,"Wrestling Men's Heavyweight, Greco-Roman"
+Wrestling,"Wrestling Men's Light-Heavyweight, Freestyle"
+Wrestling,"Wrestling Men's Light-Heavyweight, Greco-Roman"
+Wrestling,"Wrestling Men's Middleweight, Freestyle"
+Wrestling,"Wrestling Men's Middleweight, Greco-Roman"
+Wrestling,"Wrestling Men's Super-Heavyweight, Freestyle"
+Wrestling,"Wrestling Men's Super-Heavyweight, Greco-Roman"
+Wrestling,"Wrestling Men's Welterweight, Freestyle"
+Wrestling,"Wrestling Men's Welterweight, Greco-Roman"
+Wrestling,"Wrestling Women's Featherweight, Freestyle"
+Wrestling,"Wrestling Women's Flyweight, Freestyle"
+Wrestling,"Wrestling Women's Heavyweight, Freestyle"
+Wrestling,"Wrestling Women's Light-Heavyweight, Freestyle"
+Wrestling,"Wrestling Women's Lightweight, Freestyle"
