@@ -23,10 +23,9 @@ class Events {
 
   async getMedalists(id) {
     const formattedData = {}
-    console.log(id)
     const eventData = await database('events').where('id', id).select('event')
-    console.log(eventData)
     const eventMedalists = await database('olympians').where('event', eventData[0]["event"]).whereNotNull('medal').whereNot('medal', 'NULL').select('name', 'team', 'age', 'medal')
+
     formattedData["event"] = eventData[0]["event"]
     formattedData["medalists"] = eventMedalists
     return formattedData

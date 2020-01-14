@@ -12,7 +12,6 @@ class EventsHelper {
 
   async createMedalistsResponse(id) {
     const data = await events.getMedalists(id)
-    console.log(data)
     return data
   };
 }

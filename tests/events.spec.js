@@ -52,7 +52,7 @@ describe('test olympians path for get all request', () => {
       .get("/api/v1/events/1/medalists")
 
       expect(response.statusCode).toBe(200);
-      console.log(response.body)
+      
       expect(response.body).toHaveProperty("event")
       expect(response.body).toHaveProperty("medalists")
       expect(response.body["medalists"].length).toBe(1)

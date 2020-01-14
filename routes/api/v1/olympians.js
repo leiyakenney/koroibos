@@ -8,7 +8,6 @@ const OlympiansHelper = require('../../../helpers/olympiansHelper.js');
 const olympiansHelper = new OlympiansHelper();
 
 router.get('/', async function (request, response) {
-  // if youngest:
   if (request.query.age === 'youngest') {
     await olympiansHelper.createYoungestResponse()
     .then((youngestOlympian) => {
@@ -18,7 +17,6 @@ router.get('/', async function (request, response) {
        return response.status(500).json({ error });
      });
     }
-  // if oldest:
   else if (request.query.age === 'oldest') {
     await olympiansHelper.createOldestResponse()
     .then((oldestOlympian) => {
@@ -28,15 +26,14 @@ router.get('/', async function (request, response) {
        return response.status(500).json({ error });
      });
   }
-  // otherwise:
   else
     await olympiansHelper.createOlympiansResponse()
     .then((data) => {
-       response.status(200).json(data);
-     })
-     .catch((error) => {
-       return response.status(500).json({ error });
-     });
+      response.status(200).json(data);
+    })
+    .catch((error) => {
+      return response.status(500).json({ error });
+    });
 });
 
 module.exports = router;
