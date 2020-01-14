@@ -49,7 +49,7 @@ describe('test olympians path for get all request', () => {
 
     it('can get a list of medalists for a specific event', async () => {
       const response = await request(app)
-      .get(`/api/v1/events/1/medalists`)
+      .get("/api/v1/events/1/medalists")
 
       expect(response.statusCode).toBe(200);
       console.log(response.body)
@@ -61,5 +61,13 @@ describe('test olympians path for get all request', () => {
       expect(response.body["medalists"][0]["age"]).toBe("28")
       expect(response.body["medalists"][0]["medal"]).toBe("Silver")
     });
+
+    it("cannot get information for an event that doesn't exist", async () => {
+      const response = await request(app)
+      .get("/api/v1/events/no/medalists")
+
+      expect(response.statusCode).toBe(404);
+      expect(response.body.error).toBe("That event doesn't exist. Please try again!")
+    })
   });
 });
