@@ -37,7 +37,7 @@ describe('test olympian_stats path for get request', () => {
       expect(response.body["olympian_stats"]).toHaveProperty("average_weight:");
       expect(response.body["olympian_stats"]["average_weight:"]["unit"]).toBe("kg");
       expect(response.body["olympian_stats"]["average_weight:"]["male_olympians"]).toBe(60);
-      // expect(response.body["olympian_stats"]["average_weight:"]["female_olympians"]).toBe(64.25);
+      expect(response.body["olympian_stats"]["average_weight:"]["female_olympians"]).toBe(64.25);
     });
   });
 });
