@@ -33,11 +33,11 @@ describe('test olympian_stats path for get request', () => {
       expect(response.body).toHaveProperty("olympian_stats");
       expect(response.body["olympian_stats"]["total_competing_olympians"]).toBe(6);
       expect(response.body["olympian_stats"]).toHaveProperty("average_age:");
-      expect(response.body["olympian_stats"]["average_age:"]).toBe(22.833333333333332);
+      expect(response.body["olympian_stats"]["average_age:"]).toBe(22.8);
       expect(response.body["olympian_stats"]).toHaveProperty("average_weight:");
       expect(response.body["olympian_stats"]["average_weight:"]["unit"]).toBe("kg");
-      expect(response.body["olympian_stats"]["average_weight:"]["male_olympians"]).toBe(60);
-      expect(response.body["olympian_stats"]["average_weight:"]["female_olympians"]).toBe(64.25);
+      expect(response.body["olympian_stats"]["average_weight:"]["male_olympians"]).toBe(60.0);
+      expect(response.body["olympian_stats"]["average_weight:"]["female_olympians"]).toBe(64.3);
     });
   });
 });

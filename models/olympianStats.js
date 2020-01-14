@@ -18,7 +18,7 @@ class OlympianStats {
     }));
 
     var totalOlympiansCount = totalOlympians.length
-    var averageAge = (totalAge / totalOlympiansCount)
+    var averageAge = parseFloat((totalAge / totalOlympiansCount).toFixed(1))
     formattedData["average_age:"] = averageAge
 
     formattedData["average_weight:"] = {}
@@ -32,7 +32,7 @@ class OlympianStats {
     }));
 
     var totalMaleOlympians = maleOlympians.length
-    var avgMaleWeight = (malesWeight / totalMaleOlympians)
+    var avgMaleWeight = parseFloat((malesWeight / totalMaleOlympians).toFixed(1))
     formattedData["average_weight:"]["male_olympians"] = avgMaleWeight
 
     var femalesWeight = 0
@@ -43,7 +43,7 @@ class OlympianStats {
     }));
 
     var totalFemaleOlympians = femaleOlympians.length
-    var avgFemaleWeight = (femalesWeight / totalFemaleOlympians)
+    var avgFemaleWeight = parseFloat((femalesWeight / totalFemaleOlympians).toFixed(1))
     formattedData["average_weight:"]["female_olympians"] = avgFemaleWeight
 
     console.log(formattedData)
