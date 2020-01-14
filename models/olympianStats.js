@@ -11,6 +11,16 @@ class OlympianStats {
     const totalOlympians = await database('olympians').select('name', 'age', 'team', 'weight', 'height').groupBy('name', 'age', 'team', 'weight', 'height')
     formattedData["total_competing_olympians"] = totalOlympians.length
 
+    var totalAge = 0
+    await Promise.all(totalOlympians.map(async (olympian) => {
+      const olyAge = parseInt(olympian.age)
+      totalAge += olyAge
+    }));
+
+    var totalOlympiansCount = totalOlympians.length
+    var averageAge = (totalAge / totalOlympiansCount)
+    formattedData["average_age:"] = averageAge
+
     formattedData["average_weight:"] = {}
     formattedData["average_weight:"]["unit"] = "kg"
 
