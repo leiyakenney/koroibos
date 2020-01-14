@@ -14,6 +14,7 @@ describe('test olympians path for get all request', () => {
     await database('olympians').insert([
       {name: 'Chloe Esposito', sex: 'F', age: 24, height: 168, weight: 55, team: 'Australia', games: '2016 Summer', sport: 'Modern Pentathlon', event: "Modern Pentathlon Women's Individual", medal: 'Gold'},
       {name: 'Mara del Rosario Espinoza Espinoza', sex: 'F', age: 28, height: 173, weight: 70, team: 'Mexico', games: '2016 Summer', sport: 'Taekwondo', event: "Taekwondo Women's Heavyweight", medal: 'Silver'},
+      {name: 'Mara Sister', sex: 'F', age: 26, height: 171, weight: 67, team: 'Mexico', games: '2016 Summer', sport: 'Taekwondo', event: "Taekwondo Women's Heavyweight", medal: null},
       {name: 'Magdalena "Magda" Eriksson', sex: 'F', age: 22, height: 172, weight: 66, team: 'Sweden', games: '2016 Summer', sport: 'Football', event: "Football Women's Football", medal: 'Silver'},
       {name: 'Saturday Keigo Erimuya', sex: 'M', age: 18, height: 171, weight: null, team: 'Nigeria', games: '2016 Summer', sport: 'Football', event: "Football Men's Football", medal: 'Bronze'},
       {name: 'Hakan Ereker', sex: 'M', age: 22, height: 168, weight: 60, team: 'Qatar', games: '2016 Summer', sport: 'Boxing', event: "Boxing Men's Lightweight", medal: null},
@@ -54,6 +55,11 @@ describe('test olympians path for get all request', () => {
       console.log(response.body)
       expect(response.body).toHaveProperty("event")
       expect(response.body).toHaveProperty("medalists")
+      expect(response.body["medalists"].length).toBe(1)
+      expect(response.body["medalists"][0]["name"]).toBe("Mara del Rosario Espinoza Espinoza")
+      expect(response.body["medalists"][0]["team"]).toBe("Mexico")
+      expect(response.body["medalists"][0]["age"]).toBe("28")
+      expect(response.body["medalists"][0]["medal"]).toBe("Silver")
     });
   });
 });
