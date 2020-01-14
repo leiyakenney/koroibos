@@ -1,5 +1,3 @@
-// Update with your config settings.
-
 module.exports = {
 
   development: {
@@ -23,7 +21,7 @@ module.exports = {
   },
   production: {
     client: 'pg',
-    connection: `${process.env.DATABASE_URL}`, 
+    connection: `${process.env.DATABASE_URL}`,
     migrations: {
       directory: './db/migrations'
     },
