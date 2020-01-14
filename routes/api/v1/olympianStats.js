@@ -9,7 +9,7 @@ const OlympianStatsHelper = require('../../../helpers/olympianStatsHelper.js');
 const olympianStatsHelper = new OlympianStatsHelper();
 
 router.get('/', async function (request, response) {
-  await olympianStatsHelper.olympiansStatsResponse()
+  await olympianStatsHelper.olympianStatsResponse()
   .then((data) => {
     response.status(200).json(data);
   })

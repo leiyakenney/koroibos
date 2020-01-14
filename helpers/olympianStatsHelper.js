@@ -3,7 +3,7 @@ const olympianStats = new OlympianStats();
 
 class OlympianStatsHelper {
 
-  async olympiansStatsResponse() {
+  async olympianStatsResponse() {
     const data = await olympianStats.getOlympianStats()
     const formattedData = {}
     formattedData["olympian_stats"] = data
