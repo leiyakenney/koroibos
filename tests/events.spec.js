@@ -24,7 +24,7 @@ describe('test olympians path for get all request', () => {
       {sport: "Rowing", event: "Rowing Women's Lightweight Double Sculls"},
       {sport: "Rowing", event: "Rowing Women's Coxless Pairs"},
       {sport: "Rowing", event: "Rowing Men's Double Sculls"},
-      {sport: "Rowing", event: "Rowing Men's Coxed Eights"}
+      {sport: "Taekwondo", event: "Taekwondo Women's Heavyweight"}
     ]);
   });
 
@@ -39,11 +39,21 @@ describe('test olympians path for get all request', () => {
         .get("/api/v1/events");
 
       expect(response.statusCode).toBe(200);
-      console.log(response.body)
+
       expect(response.body).toHaveProperty("events")
-      expect(response.body["events"].length).toBe(1);
-      expect(response.body["events"][0]["sport"]).toBe("Rowing");
-      expect(response.body["events"][0]["events"][0]).toBe("Rowing Men's Coxed Eights");
+      expect(response.body["events"].length).toBe(2);
+      expect(response.body["events"][0]["sport"]).toBe("Taekwondo");
+      expect(response.body["events"][0]["events"][0]).toBe("Taekwondo Women's Heavyweight");
+    });
+
+    it('can get a list of medalists for a specific event', async () => {
+      const response = await request(app)
+      .get("/api/v1/events/1/medalists")
+
+      expect(response.statusCode).toBe(200);
+      console.log(response.body)
+      expect(response.body).toHaveProperty("event")
+      expect(response.body).toHaveProperty("medalists")
     });
   });
 });
