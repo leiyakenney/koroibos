@@ -29,7 +29,7 @@ Koroibos is an Express NodeJS RESTful API that returns detailed information abou
 ## Endpoints
 - To access locally: `npm start`, navigate to `http://localhost:3000/`
 
-### Endpoint 1: Get All Olympians
+### Endpoint 1: GET All Olympians
 Returns all Olympians from the database, including their: id, name, team, age, sport, and total medals won.
 ```
 GET /api/v1/olympians
@@ -57,6 +57,52 @@ status: 200
       {...}
     ]
 }
+```
+
+### Endpoint 2: GET Youngest Olympian
+```
+GET /api/v1/olympians?age=youngest
+```
+- Example successful response: 
+```
+status: 200
+
+{
+  [
+    {
+      "name": "Ana Iulia Dascl",
+      "team": "Romania",
+      "age": 13,
+      "sport": "Swimming"
+      "total_medals_won": 0
+    }
+  ]
+}
+```
+
+### Endpoint 3: GET Oldest Olympian
+```
+GET /api/v1/olympians?age=oldest
+```
+-Example successful response: 
+```
+status: 200
+{
+  [
+    {
+      "name": "Julie Brougham",
+      "team": "New Zealand",
+      "age": 62,
+      "sport": "Equestrianism"
+      "total_medals_won": 0
+    }
+  ]
+}
+```
+
+### Endpoint 4: GET Olympian Stats
+```
+GET /api/v1/olympian_stats
 ```
 
 ## Agile Project Board
