@@ -18,6 +18,12 @@ router.get('/', async function (request, response) {
 });
 
 router.get("/:id/medalists", async function (request, response) {
+  try{
+    await database('events').where('id', request.params.id).select('event')
+  }
+  catch(error) {
+    return response.status(404).json({"error": "That event doesn't exist. Please try again!"});
+  }
   await eventsHelper.createMedalistsResponse(request.params.id)
   .then((data) => {
     response.status(200).json(data);
