@@ -19,7 +19,7 @@ Koroibos is an Express NodeJS RESTful API that returns detailed information abou
 
   COPY events(sport, event) FROM 'olympic_event_data_2016_csv_full_path' delimiter ',' csv NULL AS 'NULL';
   ```
-1. Run table migrations with `knex migrate:latest`
+7. Run table migrations with `knex migrate:latest`
 
 ## Testing
 - To test this app, run `npm run test`
@@ -33,6 +33,7 @@ Koroibos is an Express NodeJS RESTful API that returns detailed information abou
 
 ### Endpoint 1: GET All Olympians
 Returns all Olympians from the database, including their: id, name, team, age, sport, and total medals won.
+
 [See it in production!](https://koroibos-lk.herokuapp.com/api/v1/olympians)
 ```
 GET /api/v1/olympians
@@ -63,7 +64,8 @@ status: 200
 ```
 
 ### Endpoint 2: GET Youngest Olympian
-Returns the youngest Olympian
+Returns the youngest Olympian.
+
 [See it in production!](https://koroibos-lk.herokuapp.com/api/v1/olympians?age=youngest)
 ```
 GET /api/v1/olympians?age=youngest
@@ -86,7 +88,8 @@ status: 200
 ```
 
 ### Endpoint 3: GET Oldest Olympian
-Returns the oldest Olympian
+Returns the oldest Olympian.
+
 [See it in production!](https://koroibos-lk.herokuapp.com/api/v1/olympians?age=oldest)
 ```
 GET /api/v1/olympians?age=oldest
@@ -108,7 +111,8 @@ status: 200
 ```
 
 ### Endpoint 4: GET Olympian Stats
-Returns various statistics for all Olympians together: total competing, average age, average weight (female and male) in kg
+Returns various statistics for all Olympians together: total competing, average age, average weight (female and male) in kg.
+
 [See it in production!](https://koroibos-lk.herokuapp.com/api/v1/olympian_stats)
 ```
 GET /api/v1/olympian_stats
@@ -130,7 +134,8 @@ status: 200
 ```
 
 ### Endpoint 5: GET api/v1/events
-Returns all events at 2016 Olympics by sport
+Returns all events at 2016 Olympics by sport.
+
 [See it in production!](https://koroibos-lk.herokuapp.com/api/v1/events)
 ```
   GET /api/v1/events
@@ -166,7 +171,8 @@ status: 200
 ```
 
 ### User Story #6: GET api/v1/events/:id/medalists
-Returns all medalists for an event by event ID
+Returns all medalists for an event by event ID.
+
 [See it in production!](https://koroibos-lk.herokuapp.com/api/v1/events/1/medalists)
 ```
 GET /api/v1/events/:id/medalists
@@ -211,7 +217,21 @@ status: 404
 ![Schema diagram with two tables: olympians and events](https://user-images.githubusercontent.com/45922590/72389628-b85ff900-3720-11ea-9b9d-fbbc7077a6fb.png)
 
 ## Known Issues
-- Heroku psql databse will expire after a set amount of time, leading to an `"error": {}` response. If this happens:
+- Heroku psql databse will expire after a set amount of time, leading to an `"error": {}` response or the below: 
+```
+error: {
+name: "error",
+length: 116,
+severity: "FATAL",
+code: "53300",
+file: "miscinit.c",
+line: "664",
+routine: "InitializeSessionUserId",
+}
+```
+
+If this happens: Try waiting about 30 seconds and trying a couple more times. If not: 
+
 ```
 heroku run bash
 knex migrate:rollback (until you are at base migration)
